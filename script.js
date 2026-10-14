@@ -1,7 +1,7 @@
 // ==========================================
 // 📝 MY PRINCESS MEMORY VAULT - BLOG DATA
 // ==========================================
-const introAudioSrc = "music/intro.mp3"; // Welcome screen music
+const introAudioSrc = "music/intro.mp3"; // ৱেলকাম স্ক্ৰীণৰ বেকগ্ৰাউণ্ড মিউজিক
 
 const blogsData = [
     {
@@ -54,8 +54,9 @@ function createHeart() {
 }
 setInterval(createHeart, 500);
 
-// Render Blogs
+// Render Blogs Function
 function renderBlogs() {
+    if (!blogsContainer) return;
     blogsContainer.innerHTML = '';
     blogsData.forEach(blog => {
         const card = document.createElement('div');
@@ -81,6 +82,9 @@ function renderBlogs() {
         blogsContainer.appendChild(card);
     });
 }
+
+// Automatically render blogs as soon as script loads
+renderBlogs();
 
 // Enter World Button Click
 enterBtn.addEventListener('click', () => {
