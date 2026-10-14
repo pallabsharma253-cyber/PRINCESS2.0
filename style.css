@@ -1,21 +1,19 @@
-/* Custom Animations & Romantic Styling */
-@keyframes float {
-    0% { transform: translateY(0vh) translateX(0vw) rotate(0deg); opacity: 0; }
-    20% { opacity: 0.8; }
-    80% { opacity: 0.8; }
-    100% { transform: translateY(-100vh) translateX(20vw) rotate(360deg); opacity: 0; }
+@keyframes floatUp {
+    0% { transform: translateY(105vh) translateX(0vw) rotate(0deg); opacity: 0; }
+    20% { opacity: 0.7; }
+    80% { opacity: 0.7; }
+    100% { transform: translateY(-10vh) translateX(15vw) rotate(360deg); opacity: 0; }
 }
 
 .heart-particle {
     position: absolute;
     bottom: -10vh;
-    color: rgba(244, 63, 94, 0.6);
-    animation: float 6s linear infinite;
+    color: rgba(255, 182, 193, 0.5);
+    animation: floatUp 7s linear infinite;
     pointer-events: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
 }
