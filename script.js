@@ -1,25 +1,18 @@
 // ==========================================
-// 📝 HOW TO ADD NEW BLOGS & MUSIC LATER:
+// 📝 HOW TO ADD NEW BLOGS LATER:
 // ==========================================
 const introAudioSrc = "music/intro.mp3"; // Welcome screen music
 
 const blogsData = [
     {
         id: 1,
-        title: "The Day We First Met",
-        date: "October 14, 2024",
-        image: "images/memory1.jpg",
+        title: "প্ৰথম দৃষ্টিৰ শিহৰণ",
+        date: "Special Memory",
+        image: "images/memory1jpg.png",
         audio: "music/song1.mp3",
-        content: `That was the day everything changed. The sky was clear, the breeze felt like a gentle whisper, and when our eyes met, time seemed to pause for a second. I never knew a single moment could hold so much magic until I met you.`
-    },
-    {
-        id: 2,
-        title: "Our Starlight Coffee Date",
-        date: "December 25, 2024",
-        image: "images/memory2.jpg",
-        audio: "music/song2.mp3",
-        content: `Sitting across from you under the dim warm lights, sipping hot coffee while you laughed at my silly jokes. Every second spent talking to you feels like poetry written just for us.`
+        content: `নৱাগত আদৰণি সভা আছিল সিদিনা।স্কুলৰ সেই ব্যস্ত বাৰাণ্ডাখনত, হঠাৎ যেন থমকি ৰ’ল মোৰ ঘড়ীৰ কাঁটাডাল। বতাহজাকো যেন অলপ শান্ত হৈ পৰিল, যিটো ক্ষণত মই তোমাক প্ৰথমবাৰলৈ দেখিলোঁ।\n\nকি এক অবুজ মাদকতা আছিল তোমাৰ সেই হাঁহিত, যিয়ে মোৰ কিশোৰ মনৰ নিৰ্জন কোঠাত নজনা, নুবুজা এটি শিহৰণ জগাই দিলে! এয়া কি মাথোঁ ভালপোৱা, নে মোৰ প্ৰথম দৃষ্টিৰ প্ৰেম?\n\nতোমাৰ চুলিখিনিত খেলি থকা পুৱাৰ ৰদালিজাক, আৰু চকুৰ অনামী মায়া সনা উজ্বলতা। সকলো যেন এক সুন্দৰ কবিতা হৈ পৰিল মোৰ বাবে। বুকুখনত এক অজানা শিহৰণ, ওঁঠত এটি ম্লান অথচ গভীৰ হাঁহি, আৰু মনত কেৱল এটাই মাত—"তোমাৰ এই অচিনাকি পৰশত মোৰ অনুভৱবোৰ সজীৱ হ'ল।"\n\nনাজানো তুমি মোৰ এই অবুজ মনৰ কথা জানিবানে নাই, কিন্তু স্কুলৰ এই ধূলিময় বাৰাণ্ডাখন এতিয়া মোৰ বাবে পৃথিৱীৰ আটাইতকৈ সুন্দৰ স্বৰ্গৰাজ্য। তুমি মাথোঁ কাষৰ মাজেৰে পাৰ হৈ গ'লা, আৰু মোৰ সমগ্ৰ কৈশোৰখনি চিৰদিনলৈ তোমাৰ নামত হৈ পৰিল! হয়টো মৰম আৰু চিৰদিনৰ ভালপোৱা খিনি.......`
     }
+    // To add more blogs in future, just copy the block above, paste it below with a comma, and change the details!
 ];
 
 // App Logic
@@ -105,7 +98,7 @@ function openBlogModal(blog) {
     modalTitle.innerText = blog.title;
     modalDate.innerText = blog.date;
     modalImage.src = blog.image;
-    modalText.innerHTML = `<p>${blog.content.replace(/\n/g, '</p><p>')}</p>`;
+    modalText.innerHTML = `<p>${blog.content.replace(/\n\n/g, '</p><p>')}</p>`;
     blogModal.classList.remove('hidden');
 
     if (blog.audio) {
