@@ -1,3 +1,15 @@
+/* Stable Fixed Background Layer */
+.welcome-bg-layer {
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(to bottom, rgba(15, 5, 10, 0.5), rgba(5, 2, 5, 0.85)), url('images/welcome-bg.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Floating Hearts / Petals Animation */
 @keyframes floatUp {
     0% { transform: translateY(105vh) translateX(0vw) rotate(0deg); opacity: 0; }
     20% { opacity: 0.7; }
@@ -14,6 +26,7 @@
     font-size: 0.9rem;
 }
 
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
 }
