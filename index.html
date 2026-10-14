@@ -10,12 +10,16 @@
 </head>
 <body class="bg-slate-950 text-rose-100 font-['Poppins'] min-h-screen overflow-x-hidden">
 
-    <!-- Floating Petals Container -->
-    <div class="hearts-container" id="heartsContainer"></div>
-
-    <!-- STARTING WELCOME SCREEN -->
-    <div id="welcomeScreen" class="fixed inset-0 z-50 flex flex-col justify-between items-center text-center px-6 py-12 transition-opacity duration-1000 bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(15, 5, 10, 0.6), rgba(5, 2, 5, 0.85)), url('images/welcome-bg.jpg.jpg');">
+    <!-- STARTING WELCOME SCREEN (Stable Fixed Background) -->
+    <div id="welcomeScreen" class="fixed inset-0 z-50 flex flex-col justify-between items-center text-center px-6 py-10 transition-opacity duration-1000">
         
+        <!-- Stable Background Image Layer -->
+        <div class="welcome-bg-layer"></div>
+
+        <!-- Floating Petals Container over background -->
+        <div class="hearts-container" id="heartsContainer"></div>
+
+        <!-- Top Spacer -->
         <div></div>
 
         <!-- Center Content -->
@@ -37,8 +41,8 @@
         </div>
 
         <!-- Enter Button -->
-        <div class="relative z-10 w-full max-w-xs flex flex-col items-center">
-            <button id="enterBtn" class="w-full py-4 px-8 rounded-full bg-gradient-to-r from-rose-950/80 via-rose-900/60 to-rose-950/80 border border-rose-400/50 text-rose-100 font-['Cinzel'] tracking-widest text-sm uppercase shadow-[0_0_25px_rgba(244,63,94,0.4)] hover:shadow-[0_0_35px_rgba(244,63,94,0.8)] hover:border-rose-300 transition-all duration-300 transform hover:scale-105 active:scale-95 backdrop-blur-md flex items-center justify-center gap-3 group">
+        <div class="relative z-10 w-full max-w-xs flex flex-col items-center pb-4">
+            <button id="enterBtn" class="w-full py-4 px-8 rounded-full bg-gradient-to-r from-rose-950/90 via-rose-900/70 to-rose-950/90 border border-rose-400/50 text-rose-100 font-['Cinzel'] tracking-widest text-sm uppercase shadow-[0_0_25px_rgba(244,63,94,0.4)] hover:shadow-[0_0_35px_rgba(244,63,94,0.8)] hover:border-rose-300 transition-all duration-300 transform hover:scale-105 active:scale-95 backdrop-blur-md flex items-center justify-center gap-3 group">
                 <span>Enter</span>
                 <span class="group-hover:translate-x-1.5 transition-transform">→</span>
             </button>
