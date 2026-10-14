@@ -16,7 +16,7 @@ const blogsData = [
         id: 2,
         title: "A Crown of Years and Grace",
         date: "Birthday Special",
-        image: "images/memory2jpg.jpeg.jpeg",
+        image: "images/memory2jpg.jpeg",
         audio: "music/song2.mp3",
         content: `The calendar turns, the stars align,\nAnd whisper that you’re safely mine—\nNot in the chains of time or place,\nBut in the quiet, sacred space\nWhere heartbeats match and shadows fade,\nWhere every dream of mine is made.\n\nToday the world puts on its light,\nTo celebrate your quiet might,\nYour laughter like a sudden spring,\nThe gentle joy you always bring.\nA masterpiece of art and grace,\nThe softest light in every place.\n\nMay this new year unfold for you\nLike velvet skies of deepest blue,\nWhere every wish you keep inside\nFinds open doors and arms stretched wide.\n\nAnd know, as seasons come and go,\nMore than the shifting stars can show,\nMy heart is yours, through dark and shine—\nHappy birthday, my sweet Princess, my sunshine.`
     }
@@ -144,4 +144,3 @@ musicToggleBtn.addEventListener('click', () => {
         nowPlayingText.innerText = "Playing Melody";
     }
 });
-    
