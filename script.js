@@ -19,6 +19,14 @@ const blogsData = [
         image: "images/memory2jpg.jpeg",
         audio: "music/song2.mp3",
         content: `The calendar turns, the stars align,\nAnd whisper that you’re safely mine—\nNot in the chains of time or place,\nBut in the quiet, sacred space\nWhere heartbeats match and shadows fade,\nWhere every dream of mine is made.\n\nToday the world puts on its light,\nTo celebrate your quiet might,\nYour laughter like a sudden spring,\nThe gentle joy you always bring.\nA masterpiece of art and grace,\nThe softest light in every place.\n\nMay this new year unfold for you\nLike velvet skies of deepest blue,\nWhere every wish you keep inside\nFinds open doors and arms stretched wide.\n\nAnd know, as seasons come and go,\nMore than the shifting stars can show,\nMy heart is yours, through dark and shine—\nHappy birthday, my sweet Princess, my sunshine.`
+    },
+    {
+        id: 3,
+        title: "শৈশৱৰ সোণালী দিনবোৰ",
+        date: "School Memories",
+        image: "images/memory3.png",
+        audio: "music/song2.mp3",
+        content: `শৈশৱৰ সোণালী দিনবোৰ, আৰু মোৰ প্ৰথম ভালপোৱা...\n\nস্কুললৈ যোৱাৰ হেঁপাহ যেন বাঢ়িছিল, দেওঁবাৰটো যেন নাযায় নোপোৱাই। তোমাক এবাৰ চোৱাৰ হাবিয়াস... উম,, সুধি চোৱা মোক। স্কুলৰ গেটত ৰৈ থকা মোৰ সেই উত্ৰাৱল মন, আৰু চাইকেল ষ্টেণ্ডত তোমাৰ সেই মৰমৰ 'লেডীবাৰ্ড'খনৰ সন্ধান।\n\nষ্টেণ্ডত 'লেডীবাৰ্ড'খন দেখিলেই বুকুখন নিমিষতে জুৰ পৰিছিল, "তাই আহিল" বুলি জানি মনটোৱে অজানিতে নাচি উঠিছিল। শ্ৰেণীকোঠাৰ সেই পাঠদানৰ মাজতো, মোৰ অবুজ চকুহালিযে কেৱল তোমাৰেই ঠিকনা বিচাৰিছিল। সহপাঠীৰ কোলাহল আৰু কিতাপৰ পাতৰ আঁৰ লৈ, মনে মনে তোমালৈ জুমি চোৱাৰ নিচা আছিল একেবাৰে সুকীয়া।\n\nতুমি হঠাৎ ঘূৰি চালে ধৰা পৰাৰ সেই মিঠা ভয়, আৰু লাজতে চকু তল কৰা মোৰ সেই নিভাঁজ সময়। ল'ৰালিৰ সেই নিষ্পাপ আৰু নীৰৱ প্ৰেম, আজিও হৃদয়ৰ এক সজীৱ আৰু এৰাব নোৱারা মিঠা অনুৰাগ হৈ ৰৈ গ'ল।`
     }
 ];
 
@@ -144,3 +152,4 @@ musicToggleBtn.addEventListener('click', () => {
         nowPlayingText.innerText = "Playing Melody";
     }
 });
+               
